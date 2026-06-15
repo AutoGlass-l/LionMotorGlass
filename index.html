@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Estrategia de marketing digital para Lion Motors Glass en Kissimmee/Orlando, FL. Diagnóstico, oportunidad de mercado, plan de 90 días y oferta.">
+<meta property="og:title" content="Propuesta Estratégica — Lion Motors Glass">
+<meta property="og:description" content="Cada cliente que consigues hoy no es tuyo. Aquí está el plan para cambiarlo.">
+<meta property="og:type" content="website">
+<title>Propuesta Estratégica — Lion Motors Glass</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Playfair+Display:ital,wght@1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #0E0D0B;
+  --bg2:       #141310;
+  --bg3:       #1A1916;
+  --border:    rgba(255,255,255,0.07);
+  --border2:   rgba(255,255,255,0.12);
+  --gold:      #C8922A;
+  --gold-dim:  rgba(200,146,42,0.15);
+  --gold-glow: rgba(200,146,42,0.08);
+  --text:      #F0EDE8;
+  --text2:     #B8B4AF;
+  --text3:     #6A6662;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-accent:  'Playfair Display', Georgia, serif;
+  --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono:    'DM Mono', monospace;
+}
+
+html { background: var(--bg); scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding-top: 0;
+}
+
+/* ── NOISE TEXTURE ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+/* ── LAYOUT ── */
+.page {
+  position: relative;
+  z-index: 1;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 1.5rem 6rem;
+}
+
+/* ── STICKY NAV ── */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(14,13,11,0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.sticky-nav.visible { transform: translateY(0); }
+
+.nav-inner {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.nav-inner::-webkit-scrollbar { display: none; }
+
+.nav-link {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text3);
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: color 0.2s, background 0.2s;
+  flex-shrink: 0;
+}
+
+.nav-link:hover { color: var(--text2); }
+.nav-link.active { color: var(--gold); background: var(--gold-dim); }
+
+.nav-cta {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--gold);
+  padding: 5px 12px;
+  border-radius: 2px;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: opacity 0.2s;
+}
+
+.nav-cta:hover { opacity: 0.85; }
+
+@media (max-width: 640px) {
+  .sticky-nav { display: none; }
+}
+
+/* ── TOPBAR ── */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.topbar-logo {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.topbar-date {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--text3);
+}
+
+/* ── HERO ── */
+.hero {
+  padding: 0 0 5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.hero-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-tag::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+  display: block;
+}
+
+.hero-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5.5vw, 56px);
+  line-height: 1.12;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.hero-h1 .accent {
+  color: var(--gold);
+  display: block;
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 700;
+}
+
+.hero-h1 .dim {
+  color: var(--text3);
+}
+
+.hero-sub {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text2);
+  max-width: 520px;
+  line-height: 1.8;
+}
+
+.hero-sub strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+.hero-line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--border2), transparent);
+}
+
+/* ── SECTION LABEL ── */
+.slabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slabel::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.section { margin-bottom: 5rem; }
+
+/* ── STATS ── */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.stat-box {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.stat-box:hover { border-color: var(--border2); }
+
+.stat-box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gold-glow);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.stat-box:hover::before { opacity: 1; }
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 48px;
+  line-height: 1;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.stat-lbl {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 1.55;
+}
+
+/* ── PROMISE ── */
+.promise-block {
+  position: relative;
+  padding: 3rem 2.5rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.promise-block::before {
+  content: '"';
+  position: absolute;
+  top: -1rem;
+  left: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 140px;
+  color: var(--gold);
+  opacity: 0.08;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.promise-block::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--gold);
+}
+
+.promise-text {
+  font-family: var(--font-body);
+  font-size: clamp(18px, 3vw, 22px);
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
+.promise-sub {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── DIFFS 2-COL ── */
+.diff-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.diff-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.75rem;
+  transition: border-color 0.2s, background 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.diff-card:hover {
+  border-color: var(--gold);
+  background: var(--bg3);
+}
+
+.diff-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.diff-card:hover::after { opacity: 1; }
+
+.diff-num {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.diff-title {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.diff-body {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 1.7;
+}
+
+/* ── FEARS ── */
+.fear-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fear-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 4px;
+  overflow: hidden;
+  gap: 1px;
+  background: var(--border);
+}
+
+.fear-q {
+  background: var(--bg2);
+  padding: 1.1rem 1.4rem;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fear-q::before {
+  content: '?';
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--text3);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.fear-a {
+  background: var(--bg3);
+  padding: 1.1rem 1.4rem;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+/* ── PHASES ── */
+.phase-list {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.phase-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s;
+}
+
+.phase-item:last-child { border-bottom: none; }
+.phase-item:hover { background: var(--bg2); }
+
+.phase-tag-col {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1.5rem 0.75rem;
+  border-right: 1px solid var(--border);
+  background: var(--bg2);
+  position: relative;
+}
+
+.phase-tag-col::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--border2);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.roadmap-start .phase-tag-col::after { top: 37px; bottom: 0; }
+.roadmap-end .phase-tag-col::after { top: 0; bottom: auto; height: 37px; }
+
+.phase-tag {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 4px 8px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.pt1 { background: var(--gold); color: var(--bg); }
+.pt2 { background: var(--bg); color: var(--text2); border: 1px solid var(--border2); }
+.pt3 { background: var(--bg); color: var(--text3); border: 1px solid var(--border); }
+
+.roadmap-node {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.node-a {
+  background: var(--bg);
+  border: 1px solid var(--border2);
+  color: var(--text3);
+}
+
+.node-b {
+  background: var(--gold);
+  color: var(--bg);
+  box-shadow: 0 0 0 4px var(--gold-dim);
+}
+
+.roadmap-start, .roadmap-end { background: var(--bg2); }
+.roadmap-end { background: var(--gold-dim); }
+
+.roadmap-edge-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 0.5rem;
+}
+
+.roadmap-end .roadmap-edge-label { color: var(--gold); }
+
+.phase-content { padding: 1.5rem; }
+
+.phase-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+
+.phase-detail {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 1.7;
+}
+
+.section-note {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--bg2);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 4px 4px 0;
+}
+
+.section-note strong { color: var(--gold); font-weight: 500; }
+
+.phase-list-items {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.phase-list-items li {
+  position: relative;
+  padding-left: 1.15rem;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text2);
+}
+
+.phase-list-items li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 1px;
+  background: var(--gold);
+  opacity: 0.6;
+}
+
+/* ── PC GRID ── */
+.pc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.pc-card {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.pc-card.active { border-color: var(--gold); }
+.pc-card:hover { border-color: var(--border2); }
+.pc-card.active:hover { border-color: var(--gold); }
+
+.pc-head {
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pch1 { background: var(--gold-dim); }
+.pch2 { background: var(--bg2); }
+.pch3 { background: var(--bg2); }
+
+.pc-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.pi1 { background: var(--gold); color: var(--bg); }
+.pi2 { background: var(--bg); color: var(--text2); border: 1px solid var(--border2); }
+.pi3 { background: var(--bg); color: var(--text3); border: 1px solid var(--border); }
+
+.pc-name { font-size: 12px; color: var(--text2); font-weight: 400; }
+.pc-name.dim { color: var(--text3); }
+
+.pc-body {
+  background: var(--bg2);
+  padding: 1rem 1.1rem;
+  height: 100%;
+}
+
+.pc-desc {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.pc-signal {
+  font-size: 11px;
+  color: var(--text3);
+  border-top: 1px solid var(--border);
+  padding-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.pc-action {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 2px;
+  letter-spacing: 0.05em;
+}
+
+.pa1 { background: var(--gold-dim); color: var(--gold); }
+.pa2 { background: transparent; color: var(--text2); border: 1px solid var(--border); }
+.pa3 { background: transparent; color: var(--text3); border: 1px solid var(--border); }
+
+/* ── CALC ── */
+.calc-wrap {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.calc-header {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text3);
+  padding: 0.85rem 1.5rem;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+}
+
+.calc-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+}
+
+.calc-row {
+  display: grid;
+  grid-template-columns: 200px 150px 1fr;
+  background: var(--bg2);
+  transition: background 0.2s;
+}
+
+.calc-row:hover { background: var(--bg3); }
+
+.calc-row.total {
+  background: var(--bg3);
+  border-top: 1px solid var(--border2);
+}
+
+.calc-lbl {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text);
+  padding: 1rem 1.25rem;
+  border-right: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+}
+
+.calc-row.total .calc-lbl { color: var(--gold); }
+
+.calc-val {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text2);
+  padding: 1rem 1.25rem;
+  border-right: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+}
+
+.calc-row.total .calc-val {
+  font-size: 22px;
+  color: var(--gold);
+}
+
+.calc-note {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text3);
+  padding: 1rem 1.25rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.calc-footer {
+  background: var(--bg2);
+  padding: 1rem 1.5rem;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 1.6;
+  border-top: 1px solid var(--border);
+}
+
+.calc-footer strong { color: var(--gold); font-weight: 400; font-style: normal; }
+
+/* ── HORIZONTE (etapas de crecimiento) ── */
+.horizon-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.horizon-stage {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg2);
+  overflow: hidden;
+}
+
+.horizon-arrow {
+  text-align: center;
+  color: var(--border2);
+  font-size: 14px;
+  line-height: 1;
+  padding: 6px 0;
+}
+
+.horizon-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg3);
+}
+
+.horizon-title {
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.horizon-time {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-left: auto;
+}
+
+.horizon-detail {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.7;
+  padding: 1rem 1.25rem;
+}
+
+.horizon-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--border);
+}
+
+.hstat {
+  padding: 0.9rem 0.5rem;
+  text-align: center;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4px;
+}
+
+.hstat:last-child { border-right: none; }
+
+.hstat-val {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text2);
+}
+
+.hstat-lbl {
+  font-size: 10px;
+  color: var(--text3);
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.hstat-total { background: var(--gold-dim); }
+.hstat-total .hstat-val { color: var(--gold); font-size: 19px; }
+.hstat-total .hstat-lbl { color: var(--gold); }
+
+.pt4 { background: var(--gold-dim); color: var(--gold); border: 1px solid var(--gold); }
+
+/* ── FLOW DEMO (Google + WhatsApp) ── */
+.flow-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.flow-step-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.65rem;
+}
+
+.flow-arrow {
+  text-align: center;
+  color: var(--border2);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.flow-google {
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.flow-google-icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--gold);
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.flow-google-info { min-width: 0; }
+
+.flow-google-name {
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #202124;
+  margin-bottom: 2px;
+}
+
+.flow-google-rating {
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #f9ab00;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.flow-google-rating span { color: #5f6368; font-weight: 400; }
+
+.flow-google-tag {
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: #188038;
+  font-weight: 500;
+}
+
+.flow-whatsapp {
+  background: #0b141a;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flow-msg {
+  max-width: 85%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #e9edef;
+}
+
+.flow-msg-in {
+  background: #202c33;
+  align-self: flex-start;
+  border-top-left-radius: 2px;
+}
+
+.flow-msg-out {
+  background: #005c4b;
+  align-self: flex-end;
+  border-top-right-radius: 2px;
+}
+
+.flow-time {
+  display: block;
+  font-size: 10px;
+  color: rgba(255,255,255,0.4);
+  margin-top: 4px;
+  text-align: right;
+}
+
+.flow-caption {
+  margin-top: 1.25rem;
+  font-size: 13px;
+  color: var(--text2);
+  text-align: center;
+}
+
+.flow-caption strong { color: var(--gold); font-weight: 400; }
+
+/* ── OFFER ── */
+.offer-wrap {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.offer-intro {
+  padding: 1.75rem 2rem;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+}
+
+.offer-intro-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.offer-intro-body {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 1.65;
+}
+
+.offer-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+}
+
+.offer-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 1.1rem 1.75rem;
+  background: var(--bg2);
+  transition: background 0.2s;
+}
+
+.offer-item:hover { background: var(--bg3); }
+
+.offer-check {
+  font-style: normal;
+  color: var(--gold);
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.offer-item-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.offer-item-body {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+.offer-price-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border-top: 1px solid var(--border);
+}
+
+.price-left {
+  background: var(--bg2);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.price-left::before {
+  content: '$';
+  position: absolute;
+  right: -0.5rem;
+  top: -1rem;
+  font-family: var(--font-display);
+  font-size: 120px;
+  color: var(--gold);
+  opacity: 0.06;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.price-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.price-num {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.price-num span {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  color: var(--text3);
+  letter-spacing: normal;
+}
+
+.price-note {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.price-right {
+  background: var(--bg3);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.result-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.result-item {
+  font-size: 13px;
+  color: var(--text2);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.result-item::before {
+  content: '✓';
+  color: var(--gold);
+  font-style: normal;
+  flex-shrink: 0;
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+/* ── CTA ── */
+.cta-wrap {
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cta-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(200,146,42,0.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.cta-top {
+  padding: 2.5rem 2rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
+}
+
+.cta-headline {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.35;
+  margin-bottom: 0.75rem;
+}
+
+.cta-body {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 1.7;
+  max-width: 540px;
+}
+
+.cta-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  position: relative;
+  z-index: 1;
+}
+
+.cta-step {
+  background: var(--bg2);
+  padding: 1.5rem;
+  transition: background 0.2s;
+}
+
+.cta-step:hover { background: var(--bg3); }
+
+.cta-step-num {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.cta-step-text {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 1.55;
+}
+
+.cta-bar {
+  background: var(--gold);
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.cta-bar:hover {
+  background: #DDA53A;
+}
+
+.cta-bar:active {
+  transform: scale(0.99);
+}
+
+.cta-bar-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.5);
+}
+
+.cta-bar-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--bg);
+  letter-spacing: 0.02em;
+  flex: 1;
+  text-align: left;
+  margin-left: 0.5rem;
+}
+
+.cta-bar-arrow {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--bg);
+  transition: transform 0.2s;
+}
+
+.cta-bar:hover .cta-bar-arrow {
+  transform: translateX(4px);
+}
+
+/* ── DIVIDER ── */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 4rem 0;
+}
+
+/* ── FOOTER ── */
+.footer {
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer span {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text3);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .page { padding: 0 1rem 4rem; }
+  .hero { padding-bottom: 3rem; margin-bottom: 3rem; }
+  .hero-line { display: none; }
+  .section { margin-bottom: 3rem; }
+  .stats-row { grid-template-columns: 1fr; gap: 2px; }
+  .diff-grid { grid-template-columns: 1fr; }
+  .fear-row { grid-template-columns: 1fr; border-radius: 4px; overflow: hidden; }
+  .fear-a { border-top: 1px solid var(--border); }
+  .pc-grid { grid-template-columns: 1fr; }
+  .calc-row { grid-template-columns: 1fr; }
+  .calc-val { border-right: none; border-bottom: none; padding-top: 0.2rem; }
+  .calc-lbl {
+    border-right: none;
+    border-bottom: none;
+    color: var(--gold);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.9rem 1.1rem 0.4rem;
+  }
+  .calc-transform .calc-row { grid-template-columns: 1fr 1fr; }
+  .calc-transform .calc-lbl {
+    grid-column: 1 / -1;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    padding: 0.9rem 1rem 0.5rem;
+    color: var(--gold);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .calc-transform .calc-val,
+  .calc-transform .calc-note {
+    display: block;
+    border: none;
+    padding: 0.7rem 0.8rem 0.9rem;
+    font-size: 11.5px;
+    line-height: 1.45;
+  }
+  .calc-transform .calc-val { border-right: 1px solid var(--border); }
+  .calc-transform .calc-val::before,
+  .calc-transform .calc-note::before {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+  }
+  .calc-transform .calc-val::before { content: "Hoy"; color: var(--text3); }
+  .calc-transform .calc-note::before { content: "En 90 días"; color: var(--gold); }
+  .offer-price-row { grid-template-columns: 1fr; }
+  .cta-steps { grid-template-columns: 1fr; }
+  .cta-bar { flex-wrap: wrap; gap: 4px 12px; }
+  .cta-bar-label { width: 100%; order: 1; }
+  .cta-bar-name { order: 2; margin-left: 0; font-size: 18px; }
+  .cta-bar-arrow { order: 3; }
+  .footer { flex-direction: column; }
+  .phase-item { grid-template-columns: 68px 1fr; }
+  .topbar { margin-bottom: 3rem; }
+  .horizon-stats { grid-template-columns: repeat(2, 1fr); }
+  .hstat:nth-child(2) { border-right: none; }
+  .hstat:nth-child(1), .hstat:nth-child(2) { border-bottom: 1px solid var(--border); }
+  .hstat-val { font-size: 15px; }
+  .horizon-head { flex-wrap: wrap; }
+  .horizon-time { margin-left: 0; }
+}
+</style>
+</head>
+<body>
+<!-- STICKY NAV -->
+<nav class="sticky-nav" id="sticky-nav" aria-label="Navegación">
+  <div class="nav-inner">
+    <a href="#sec-cambio"      class="nav-link">El cambio</a>
+    <a href="#sec-oportunidad" class="nav-link">Oportunidad</a>
+    <a href="#sec-ventajas"    class="nav-link">Ventajas</a>
+    <a href="#sec-plan"        class="nav-link">Plan</a>
+    <a href="#sec-proyeccion"  class="nav-link">Crecimiento</a>
+    <a href="#sec-oferta"      class="nav-link">Oferta</a>
+    <a href="#sec-cta"         class="nav-cta">Contactar →</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <span class="topbar-logo">Marcos Rodríguez — Análisis de Mercado</span>
+    <span class="topbar-date">Orlando, FL · 2026</span>
+  </div>
+
+  <!-- 1. HERO -->
+  <div class="hero" id="sec-hero">
+    <div class="hero-tag">Plan de crecimiento · Lion Motors Glass</div>
+    <h1 class="hero-h1">
+      <span class="dim">El dealer se queda</span>
+      <span class="accent">con el 60%.</span>
+    </h1>
+    <p class="hero-sub">
+      Hoy dependes de eso — sin presencia digital, sin reseñas, sin que nadie te busque a ti directamente. Este es el plan para cambiarlo, mes a mes.
+    </p>
+    <div class="hero-line"></div>
+  </div>
+
+  <!-- 1.5 EL CAMBIO -->
+  <div class="section" id="sec-cambio">
+    <div class="slabel">El cambio, en concreto</div>
+    <div class="calc-wrap calc-transform">
+      <div class="calc-body">
+        <div class="calc-row">
+          <div class="calc-lbl">Cómo te encuentran</div>
+          <div class="calc-val" style="color:var(--text3);font-weight:400;">Solo si el dealer te llama</div>
+          <div class="calc-note" style="color:var(--text);font-weight:500;font-size:13px;">→ Te buscan en Google y llegan directo a ti</div>
+        </div>
+        <div class="calc-row">
+          <div class="calc-lbl">Quién se queda el margen</div>
+          <div class="calc-val" style="color:var(--text3);font-weight:400;">El dealer (~60%)</div>
+          <div class="calc-note" style="color:var(--text);font-weight:500;font-size:13px;">→ Tú, completo — mismo trabajo</div>
+        </div>
+        <div class="calc-row">
+          <div class="calc-lbl">Reseñas en Google</div>
+          <div class="calc-val" style="color:var(--text3);font-weight:400;">0, o casi</div>
+          <div class="calc-note" style="color:var(--text);font-weight:500;font-size:13px;">→ 20+ reseñas reales con tu nombre y trabajos</div>
+        </div>
+        <div class="calc-row">
+          <div class="calc-lbl">Presencia digital</div>
+          <div class="calc-val" style="color:var(--text3);font-weight:400;">No existe</div>
+          <div class="calc-note" style="color:var(--text);font-weight:500;font-size:13px;">→ Tu ficha en Google + WhatsApp Business + negocio registrado</div>
+        </div>
+        <div class="calc-row">
+          <div class="calc-lbl">Clientes directos/mes</div>
+          <div class="calc-val" style="color:var(--text3);font-weight:400;">~10, sin medir, sin saber de dónde vienen</div>
+          <div class="calc-note" style="color:var(--text);font-weight:500;font-size:13px;">→ +8–12 adicionales/mes (y escalando), medibles, con origen claro</div>
+        </div>
+        <div class="calc-row">
+          <div class="calc-lbl">Cobro a aseguradoras</div>
+          <div class="calc-val" style="color:var(--text3);font-weight:400;">No puedes — negocio no registrado</div>
+          <div class="calc-note" style="color:var(--text);font-weight:500;font-size:13px;">→ Facturas directo, sin pasar por nadie</div>
+        </div>
+      </div>
+      <div class="calc-footer">
+        Esto es lo que pasa cuando alguien busca "windshield repair" cerca de ti:
+      </div>
+    </div>
+
+    <div class="flow-demo">
+      <div class="flow-step">
+        <span class="flow-step-label">1 — Te encuentra en Google</span>
+        <div class="flow-google">
+          <div class="flow-google-icon">LM</div>
+          <div class="flow-google-info">
+            <div class="flow-google-name">Lion Motors Glass · Kissimmee, FL</div>
+            <div class="flow-google-rating">★★★★★ 4.9 <span>(20 reseñas)</span></div>
+            <div class="flow-google-tag">Responde en minutos · Servicio móvil</div>
+          </div>
+        </div>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="flow-step-label">2 — Te escribe por WhatsApp</span>
+        <div class="flow-whatsapp">
+          <div class="flow-msg flow-msg-in">Hola! Vi que tienen 4.9⭐ en Google. Se me rompió el parabrisas, ¿pueden venir hoy a Kissimmee?<span class="flow-time">10:42 AM</span></div>
+          <div class="flow-msg flow-msg-out">¡Claro! ¿Qué carro es y a qué hora te queda bien?<span class="flow-time">10:43 AM</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-caption">Vas, resuelves, cobras (al seguro o directo), y pides la reseña al terminar. <strong>Esa persona nunca pasó por un dealer — es tuya.</strong></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 2. OPORTUNIDAD -->
+  <div class="section" id="sec-oportunidad">
+    <div class="slabel">Por qué esto va a funcionar</div>
+    <div class="stats-row">
+      <div class="stat-box">
+        <span class="stat-num" data-target="68" data-suffix="%">0%</span>
+        <span class="stat-lbl">de Kissimmee es hispana — tu mercado natural sin competencia digital</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" data-prefix="$" data-target="0">$0</span>
+        <span class="stat-lbl">paga el cliente en muchos casos — pólizas con comprehensive y deducible $0 son comunes en Florida</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" data-target="0">0</span>
+        <span class="stat-lbl">competidores hispanos serios haciendo marketing digital en Orlando</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. DIFERENCIADORES -->
+  <div class="section" id="sec-ventajas">
+    <div class="slabel">Lo que ya tienes a tu favor — y vamos a usar</div>
+    <div class="diff-grid">
+      <div class="diff-card">
+        <span class="diff-num">01</span>
+        <div class="diff-title">Eres de la comunidad</div>
+        <div class="diff-body">Eres venezolano y conoces de cerca a la comunidad hispana de Orlando — entiendes al cliente porque eres parte de ella. Eso no lo puede comprar Safelite con ningún presupuesto de publicidad.</div>
+      </div>
+      <div class="diff-card">
+        <span class="diff-num">02</span>
+        <div class="diff-title">Vas donde el cliente está</div>
+        <div class="diff-body">Su casa, trabajo, el parking del Walmart. Sin costo extra. Mientras la competencia espera que lleven el carro, tú ya terminaste el trabajo.</div>
+      </div>
+      <div class="diff-card">
+        <span class="diff-num">03</span>
+        <div class="diff-title">Explicas el seguro en su idioma</div>
+        <div class="diff-body">La mayoría de tu mercado no sabe que el seguro lo cubre. Tú se lo explicas en español, sin letra chica, sin pedirle que firme nada raro. Eso genera confianza inmediata.</div>
+      </div>
+      <div class="diff-card">
+        <span class="diff-num">04</span>
+        <div class="diff-title">El que llama es el que trabaja</div>
+        <div class="diff-body">No hay call center, no hay intermediario. El cliente habla contigo y tú haces la instalación. Esa transparencia es tu diferenciador más fuerte.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. PROMESA -->
+  <div class="section">
+    <div class="slabel">El mensaje que vamos a usar en Google y redes</div>
+    <div class="promise-block">
+      <div class="promise-text">"Te cambio el parabrisas donde estás, en tu idioma, y si tienes seguro probablemente no pagas nada."</div>
+      <div class="promise-sub">Simple · Directa · Sin corporativo</div>
+    </div>
+  </div>
+
+  <!-- 6. MIEDOS -->
+  <div class="section">
+    <div class="slabel">Lo que frena a tu cliente — y cómo lo rompes tú</div>
+    <div class="fear-grid">
+      <div class="fear-row">
+        <div class="fear-q">Me va a subir el seguro</div>
+        <div class="fear-a">En la mayoría de los casos, un reclamo de vidrio no afecta tu prima — vale la pena confirmarlo con tu aseguradora, pero apenas lo mencionas, el miedo principal desaparece.</div>
+      </div>
+      <div class="fear-row">
+        <div class="fear-q">Es una estafa — me van a pedir que firme algo raro</div>
+        <div class="fear-a">Reseñas reales en Google, con tu nombre y tus trabajos — sin contratos raros que firmar. Cuando te buscan, ya ven que otros confiaron antes. La venta está medio hecha antes de que contesten el teléfono.</div>
+      </div>
+      <div class="fear-row">
+        <div class="fear-q">No entiendo cómo funciona el seguro acá</div>
+        <div class="fear-a">Un post tuyo: "¿Tienes comprehensive? Te explico en 30 segundos." Ese contenido solo dispara mensajes directos todos los días.</div>
+      </div>
+      <div class="fear-row">
+        <div class="fear-q">No tengo tiempo de llevar el carro</div>
+        <div class="fear-a">Tú vas donde están. Ese es tu gancho más fuerte — pero si no lo comunicas claro en cada post, tu cliente no lo sabe.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 7. PLAN -->
+  <div class="section" id="sec-plan">
+    <div class="slabel">Plan mes a mes — qué construimos y qué esperar</div>
+    <div class="section-note">Todo lo digital — Google, anuncios, reseñas, WhatsApp — lo manejo yo. De tu parte, lo único que se necesita en estos 3 meses es: <strong>registrar el negocio</strong> (un trámite de papeles), <strong>fotos de tus trabajos</strong>, y <strong>responder los mensajes</strong> que vayan llegando.</div>
+    <div class="phase-list">
+      <div class="phase-item roadmap-start">
+        <div class="phase-tag-col"><span class="roadmap-node node-a">A</span></div>
+        <div class="phase-content">
+          <span class="roadmap-edge-label">Punto de partida — hoy</span>
+          <div class="phase-detail">Dependes de los dealers (~60% de tu margen se queda con ellos). Sin ficha en Google, sin reseñas, sin el negocio registrado — invisible para quien te busca en internet.</div>
+        </div>
+      </div>
+      <div class="phase-item">
+        <div class="phase-tag-col"><span class="phase-tag pt1">Mes 1</span></div>
+        <div class="phase-content">
+          <div class="phase-title">Cimientos + primeros anuncios desde la semana 1</div>
+          <div class="phase-detail">Construimos la base y arrancamos a vender en paralelo:</div>
+          <ul class="phase-list-items">
+            <li>Auditoría: repasamos juntos tus números — trabajos/mes (dealer vs. directo), precio y ganancia por trabajo, capacidad real</li>
+            <li>Registro del negocio (~$125, un trámite de papeles) — esto te permite cobrarle directo a las aseguradoras más adelante</li>
+            <li>Tu ficha en Google (nombre, fotos, teléfono, reseñas — lo que la gente ve cuando te busca) + WhatsApp Business activo</li>
+            <li>Una página sencilla + anuncios en Google ($300–400/mes, lo pones tú) — para que empiecen a llegar llamadas en días, no meses</li>
+            <li>Empezamos a pedir reseña (comentario/opinión en Google) después de cada trabajo</li>
+          </ul>
+          <span class="pc-action pa1">Clientes directos nuevos: 3–5/mes, desde la primera-segunda semana.</span>
+        </div>
+      </div>
+      <div class="phase-item">
+        <div class="phase-tag-col"><span class="phase-tag pt2">Mes 2</span></div>
+        <div class="phase-content">
+          <div class="phase-title">Reinversión — el canal empieza a pagarse solo</div>
+          <div class="phase-detail">Con los primeros clientes ya generando margen, reinvertimos:</div>
+          <ul class="phase-list-items">
+            <li>10–15 reseñas reales acumuladas</li>
+            <li>Apareces gratis cuando alguien busca "auto glass" o "windshield repair" — sin pagar extra</li>
+            <li>Con parte de la ganancia del mes 1, subimos los anuncios en Google a $600–800/mes</li>
+            <li>Si el registro del negocio y el seguro ya están listos, activamos un segundo tipo de anuncio en Google (con sello de garantía) — corre en paralelo, 1–3 semanas</li>
+          </ul>
+          <span class="pc-action pa1">Clientes directos adicionales: 6–8/mes.</span>
+        </div>
+      </div>
+      <div class="phase-item">
+        <div class="phase-tag-col"><span class="phase-tag pt3">Mes 3</span></div>
+        <div class="phase-content">
+          <div class="phase-title">Segundo tipo de anuncio activo</div>
+          <div class="phase-detail">Se activa el segundo tipo de anuncio en Google, y seguimos reinvirtiendo:</div>
+          <ul class="phase-list-items">
+            <li>El segundo anuncio (el de sello de garantía) se suma al primero — dos fuentes de llamadas pagadas</li>
+            <li>Presupuesto total ~$1,000–1,500/mes si seguimos reinvirtiendo — lo sigue poniendo el negocio, no tu bolsillo</li>
+            <li>20+ reseñas acumuladas</li>
+            <li>A los 60–90 días, con datos reales, decidimos si seguimos subiendo el presupuesto</li>
+          </ul>
+          <span class="pc-action pa1">Clientes directos adicionales: 8–12/mes — y subiendo hacia 15–20 si seguimos reinvirtiendo.</span>
+        </div>
+      </div>
+      <div class="phase-item roadmap-end">
+        <div class="phase-tag-col"><span class="roadmap-node node-b">B</span></div>
+        <div class="phase-content">
+          <span class="roadmap-edge-label">Punto de llegada — 90 días</span>
+          <div class="phase-detail">Tu negocio ya existe en Google: anuncios + ficha + reseñas generando 8–12 clientes directos/mes adicionales (y subiendo), con claridad de cuántos vienen y de dónde. Negocio registrado, con capacidad de cobrarle directo a las aseguradoras. Los anuncios ya se pagan solos con lo que generan.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. PERFILES -->
+  <div class="section">
+    <div class="slabel">Los 3 mensajes que te van a llegar</div>
+    <div class="pc-grid">
+      <div class="pc-card active">
+        <div class="pc-head pch1">
+          <span class="pc-icon pi1">!</span>
+          <span class="pc-name">Quiere que vayas hoy</span>
+        </div>
+        <div class="pc-body">
+          <div class="pc-desc">Latino 28–50 años, tiene comprehensive, el parabrisas está roto ahora mismo. Quiere resolver hoy, no mañana.</div>
+          <div class="pc-signal">"¿Puedes venir hoy?" / Te manda foto del daño por WhatsApp</div>
+          <span class="pc-action pa1">Responder en &lt;5 min. Cerrar hoy.</span>
+        </div>
+      </div>
+      <div class="pc-card">
+        <div class="pc-head pch2">
+          <span class="pc-icon pi2">?</span>
+          <span class="pc-name">Tiene dudas</span>
+        </div>
+        <div class="pc-body">
+          <div class="pc-desc">Tiene chip o grieta pequeña que "no molesta todavía". Desconfía, no sabe si tiene comprehensive ni cómo funciona.</div>
+          <div class="pc-signal">"Lo tengo así hace meses" / "¿Me sube el seguro?"</div>
+          <span class="pc-action pa2">Explicar, no presionar. Cierra en 2–3 contactos.</span>
+        </div>
+      </div>
+      <div class="pc-card">
+        <div class="pc-head pch3">
+          <span class="pc-icon pi3">$</span>
+          <span class="pc-name dim">Solo quiere precio</span>
+        </div>
+        <div class="pc-body">
+          <div class="pc-desc" style="color:var(--text3)">Sin seguro, sin presupuesto real. Solo quiere el precio más bajo para comparar. No va a cerrar ahora.</div>
+          <div class="pc-signal">"No tengo seguro" / "¿Cuánto es lo más barato?"</div>
+          <span class="pc-action pa3">Precio honesto y listo. No perseguir.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 9. HORIZONTE -->
+  <div class="section" id="sec-proyeccion">
+    <div class="slabel">Hacia dónde va esto</div>
+    <div class="section-note">Hay dos tipos de trabajo, y la diferencia importa. Un trabajo <strong>normal</strong> (cobras ~$350, el vidrio y materiales cuestan ~$150) te deja <strong>~$200</strong> de ganancia. Un trabajo de un carro más nuevo — de los que tienen cámaras en el parabrisas y hay que calibrarlas después del cambio — el seguro paga más, y te deja <strong>~$400</strong>. Mismo tiempo, casi el doble.</div>
+
+    <div class="horizon-wrap">
+      <div class="horizon-stage">
+        <div class="horizon-head">
+          <span class="phase-tag pt1">Mes 1–2</span>
+          <span class="horizon-title">Arranque</span>
+          <span class="horizon-time">$300/mes para ti</span>
+        </div>
+        <div class="horizon-detail">Los primeros clientes llegan por tu ficha en Google y el anuncio. Todavía son trabajos normales — el registro para cobrarle al seguro está en trámite.</div>
+        <div class="horizon-stats">
+          <div class="hstat"><span class="hstat-val">5</span><span class="hstat-lbl">clientes extra / mes</span></div>
+          <div class="hstat"><span class="hstat-val">$1,000</span><span class="hstat-lbl">ganancia bruta</span></div>
+          <div class="hstat"><span class="hstat-val">$700</span><span class="hstat-lbl">anuncios + mi parte</span></div>
+          <div class="hstat hstat-total"><span class="hstat-val">$300</span><span class="hstat-lbl">te quedas tú</span></div>
+        </div>
+      </div>
+
+      <div class="horizon-arrow">↓</div>
+
+      <div class="horizon-stage">
+        <div class="horizon-head">
+          <span class="phase-tag pt2">Mes 2–3</span>
+          <span class="horizon-title">Empiezan los trabajos con seguro</span>
+          <span class="horizon-time">$1,500/mes para ti</span>
+        </div>
+        <div class="horizon-detail">Con el negocio ya registrado, parte de los trabajos —los de carros con cámaras— se facturan al seguro y pagan casi el doble. Subimos el anuncio con la ganancia del mes 1.</div>
+        <div class="horizon-stats">
+          <div class="hstat"><span class="hstat-val">8</span><span class="hstat-lbl">clientes extra / mes</span></div>
+          <div class="hstat"><span class="hstat-val">$2,600</span><span class="hstat-lbl">ganancia bruta</span></div>
+          <div class="hstat"><span class="hstat-val">$1,100</span><span class="hstat-lbl">anuncios + mi parte</span></div>
+          <div class="hstat hstat-total"><span class="hstat-val">$1,500</span><span class="hstat-lbl">te quedas tú</span></div>
+        </div>
+      </div>
+
+      <div class="horizon-arrow">↓</div>
+
+      <div class="horizon-stage">
+        <div class="horizon-head">
+          <span class="phase-tag pt3">Mes 3+</span>
+          <span class="horizon-title">Segundo anuncio activo</span>
+          <span class="horizon-time">$2,100/mes para ti</span>
+        </div>
+        <div class="horizon-detail">Con más reseñas y un segundo anuncio activo entran más llamadas — y más de ellas son trabajos con seguro.</div>
+        <div class="horizon-stats">
+          <div class="hstat"><span class="hstat-val">12</span><span class="hstat-lbl">clientes extra / mes</span></div>
+          <div class="hstat"><span class="hstat-val">$4,000</span><span class="hstat-lbl">ganancia bruta</span></div>
+          <div class="hstat"><span class="hstat-val">$1,900</span><span class="hstat-lbl">anuncios + mi parte</span></div>
+          <div class="hstat hstat-total"><span class="hstat-val">$2,100</span><span class="hstat-lbl">te quedas tú</span></div>
+        </div>
+      </div>
+
+      <div class="horizon-arrow">↓</div>
+
+      <div class="horizon-stage">
+        <div class="horizon-head">
+          <span class="phase-tag pt4">Mes 5–8</span>
+          <span class="horizon-title">A toda capacidad — si el Mes 3 funciona, no hay que esperar más</span>
+          <span class="horizon-time">$6,200–$10,200/mes para ti</span>
+        </div>
+        <div class="horizon-detail">Los $3,000 en anuncios, a un costo por llamada parecido al de la etapa anterior, dan unas 60 llamadas pagadas. A esas se suman otras 35–40 que llegan solas — por tus 20+ reseñas y por aparecer mejor en Google, sin costar nada extra. En total, ~100 contactos al mes — pero no todos van a caer en horarios donde puedas atenderlos. Lo realista: entre 28 y 40 trabajos, según cuántos días tengan espacio para 2 carros (uno en la mañana, otro en la tarde). En este punto, esto pasa a ser tu actividad principal — el trabajo de dealer queda para llenar huecos, si quieres seguir tomándolo.</div>
+        <div class="horizon-stats">
+          <div class="hstat"><span class="hstat-val">28–40</span><span class="hstat-lbl">clientes extra / mes</span></div>
+          <div class="hstat"><span class="hstat-val" style="font-size:15px;">$9,600–$13,600</span><span class="hstat-lbl">ganancia bruta</span></div>
+          <div class="hstat"><span class="hstat-val">$3,400</span><span class="hstat-lbl">anuncios + mi parte</span></div>
+          <div class="hstat hstat-total"><span class="hstat-val" style="font-size:16px;">$6,200–$10,200</span><span class="hstat-lbl">te quedas tú</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="calc-footer">
+      Todo esto es <strong>adicional</strong> a lo que ya generas con tus dealers, y son metas optimistas — el lado alto de lo que planeamos. Notarás que lo que <strong>te quedas tú</strong> crece más rápido que la ganancia bruta de una etapa a otra: es porque los gastos fijos (anuncios + mi parte) casi no suben mientras el negocio crece.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 10. OFERTA -->
+  <div class="section" id="sec-oferta">
+    <div class="slabel">Qué hago yo — y qué cuesta</div>
+    <div class="offer-wrap">
+      <div class="offer-intro">
+        <div class="offer-intro-title">Esto es exactamente lo que voy a hacer, mes a mes.</div>
+        <div class="offer-intro-body">Todo lo que ves abajo lo hago yo personalmente. Empezamos honestos: los primeros meses son de construcción, no de resultados masivos — pero cada mes tiene un objetivo claro y medible, y lo revisamos juntos con datos reales.</div>
+      </div>
+      <div class="offer-items">
+        <div class="offer-item">
+          <span class="offer-check">✓</span>
+          <div>
+            <div class="offer-item-title">Auditoría de tu negocio + acompañamiento en formalización</div>
+            <div class="offer-item-body">Levantamos tus números reales: trabajos/mes, dealer vs. directo, ticket, margen, capacidad. Te acompaño en el registro de tu negocio (~$125, trámite tuyo) y en cotizar el seguro — esto abre la puerta a un segundo tipo de anuncio en Google y a cobrarle directo a las aseguradoras.</div>
+          </div>
+        </div>
+        <div class="offer-item">
+          <span class="offer-check">✓</span>
+          <div>
+            <div class="offer-item-title">Página simple + primeros anuncios desde la semana 1</div>
+            <div class="offer-item-body">Página simple con botón directo a WhatsApp, y la primera campaña de anuncios en Google ($300–400/mes, lo pones tú) — para empezar a recibir llamadas en días, no meses.</div>
+          </div>
+        </div>
+        <div class="offer-item">
+          <span class="offer-check">✓</span>
+          <div>
+            <div class="offer-item-title">Tu ficha en Google, completa</div>
+            <div class="offer-item-body">Configuración, fotos de tus trabajos reales, descripción optimizada, zona de servicio, categorías correctas. El cliente te encuentra cuando busca.</div>
+          </div>
+        </div>
+        <div class="offer-item">
+          <span class="offer-check">✓</span>
+          <div>
+            <div class="offer-item-title">Sistema de reseñas activado</div>
+            <div class="offer-item-body">Mensaje exacto para pedir reseña después de cada trabajo, vía WhatsApp. Meta progresiva: 10–15 reseñas para el mes 2, 20+ para el mes 3.</div>
+          </div>
+        </div>
+        <div class="offer-item">
+          <span class="offer-check">✓</span>
+          <div>
+            <div class="offer-item-title">WhatsApp Business + seguimiento de cada lead</div>
+            <div class="offer-item-body">Configuración de WhatsApp Business y seguimiento de cada mensaje/llamada nueva, para saber exactamente de dónde viene cada cliente.</div>
+          </div>
+        </div>
+      </div>
+      <div class="offer-price-row">
+        <div class="price-left">
+          <span class="price-label">Inversión mensual</span>
+          <div class="price-num">$300 <span>/mes</span></div>
+          <div class="price-note">Meses 1–2, mientras construimos — los primeros meses no son de ganancias grandes para nadie, ni para ti ni para mí. A partir del mes 3, cuando se activa el segundo tipo de anuncio y ya hay resultados medibles, pasamos a $350–400/mes. Sin contrato — mes a mes, y se revisa con datos reales a los 60 días.</div>
+        </div>
+        <div class="price-right">
+          <span class="result-label">Resultado esperado al mes 1</span>
+          <div class="result-item">Tus números reales documentados (volumen, ticket, margen, capacidad)</div>
+          <div class="result-item">Negocio registrado o en trámite</div>
+          <div class="result-item">Tu ficha en Google activa y verificada</div>
+          <div class="result-item">WhatsApp Business configurado</div>
+          <div class="result-item">Reseñas pidiéndose después de cada trabajo</div>
+          <div class="result-item">Primera campaña de anuncios activa — primeros 3–5 clientes directos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 11. CTA -->
+  <div class="section" id="sec-cta">
+    <div class="slabel">Por dónde arrancamos</div>
+    <div class="cta-wrap">
+      <div class="cta-top">
+        <div class="cta-headline">Ya tienes el plan completo, tío. Esto es por dónde empezamos.</div>
+        <div class="cta-body">No hace falta una reunión formal — los primeros dos pasos los puedes hacer ya. Apenas estén listos, arrancamos con el Mes 1.</div>
+      </div>
+      <div class="cta-steps">
+        <div class="cta-step">
+          <span class="cta-step-num">01</span>
+          <div class="cta-step-text">Registras tu negocio (~$125, trámite online en Sunbiz)</div>
+        </div>
+        <div class="cta-step">
+          <span class="cta-step-num">02</span>
+          <div class="cta-step-text">Me mandas fotos de tus próximos 2–3 trabajos para armar tu ficha en Google</div>
+        </div>
+        <div class="cta-step">
+          <span class="cta-step-num">03</span>
+          <div class="cta-step-text">Con eso, arranca el Mes 1: auditoría, tu ficha en Google, WhatsApp Business, sistema de reseñas y la primera campaña de anuncios</div>
+        </div>
+      </div>
+      <a class="cta-bar" href="https://wa.me/584244591626?text=Hola%20Marcos%2C%20ya%20vi%20el%20plan%20completo%2C%20arranquemos" target="_blank" rel="noopener">
+        <span class="cta-bar-label">¿Hablamos?</span>
+        <span class="cta-bar-name">Escríbeme y arrancamos</span>
+        <span class="cta-bar-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>Marcos Rodríguez — Crecimiento Digital Local</span>
+    <span>Orlando, FL · 2026</span>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  /* ── 1. STICKY NAV: show after hero, highlight active section ── */
+  var nav = document.getElementById('sticky-nav');
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-link'));
+  var hero = document.getElementById('sec-hero');
+
+  function onScroll() {
+    var heroBottom = hero.getBoundingClientRect().bottom;
+    if (heroBottom < 0) {
+      nav.classList.add('visible');
+    } else {
+      nav.classList.remove('visible');
+    }
+
+    var scrollPos = window.scrollY + 80;
+    var current = null;
+    navLinks.forEach(function (link) {
+      var id = link.getAttribute('href').slice(1);
+      var sec = document.getElementById(id);
+      if (sec && sec.offsetTop <= scrollPos) {
+        current = link;
+      }
+    });
+    navLinks.forEach(function (link) { link.classList.remove('active'); });
+    if (current) current.classList.add('active');
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ── 2. SCROLL FADE-IN for sections ── */
+  var revealEls = document.querySelectorAll('.section, .hero');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    revealEls.forEach(function (el) {
+      el.classList.add('reveal');
+      io.observe(el);
+    });
+  }
+
+  /* ── 3. STAT COUNTERS ── */
+  var counters = document.querySelectorAll('.stat-num[data-target]');
+  if ('IntersectionObserver' in window && counters.length) {
+    var counterIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        var target = parseInt(el.getAttribute('data-target'), 10);
+        var prefix = el.getAttribute('data-prefix') || '';
+        var suffix = el.getAttribute('data-suffix') || '';
+        var duration = 1100;
+        var start = null;
+
+        function step(ts) {
+          if (start === null) start = ts;
+          var progress = Math.min((ts - start) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          var value = Math.round(eased * target);
+          el.textContent = prefix + value + suffix;
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            el.textContent = prefix + target + suffix;
+          }
+        }
+        requestAnimationFrame(step);
+        counterIO.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(function (el) { counterIO.observe(el); });
+  }
+})();
+</script>
+
+</body>
+</html>
